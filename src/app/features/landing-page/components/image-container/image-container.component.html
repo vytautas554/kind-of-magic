@@ -1,10 +1,5 @@
 <div class="pt-2 container">
-  <p-image
-    src="{{ imageSrc }}"
-    alt="Image"
-    width="100%"
-    height="700rem"
-  ></p-image>
+  <img class="image" src="{{ imageSrc }}" alt="Image">
   <div class="img-text-container">
     <h1 *ngIf="showTitle" class="title">{{ title }}</h1>
     <p [ngClass]="showTitle ? 'text-base' : 'text-6xl'">

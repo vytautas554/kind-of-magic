@@ -8,25 +8,23 @@
       *ngFor="let cardData of cardSectionData; let last = last"
     >
       <div class="flex flex-column justify-content-between p-4 test">
-        <p-image
+        <img
           *ngIf="cardData.imageSrc && cardData.title !== 'DUK'"
+          class="image"
           src="{{ cardData.imageSrc }}"
           alt="Image"
-          width="100%"
-          height="300rem"
-        ></p-image>
+        >
         <h1>{{ cardData.title }}</h1>
         <p class="">{{ cardData.description }}</p>
         <p *ngIf="cardData.reviewPerson" class="flex justify-content-end">
           {{ cardData.reviewPerson }}
         </p>
-        <p-image
+        <img
           *ngIf="cardData.imageSrc && cardData.title === 'DUK'"
+          class="image"
           src="{{ cardData.imageSrc }}"
           alt="Image"
-          width="100%"
-          height="300rem"
-        ></p-image>
+        >
         <app-common-button></app-common-button>
       </div>
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -7,6 +7,7 @@ import { ButtonModule } from 'primeng/button';
   imports: [ButtonModule],
   templateUrl: './common-button.component.html',
   styleUrl: './common-button.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class CommonButtonComponent {
   @Input() public isRounded = true;
