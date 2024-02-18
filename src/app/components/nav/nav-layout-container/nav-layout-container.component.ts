@@ -2,12 +2,9 @@ import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
-import {
-  facebookUrl,
-  instagramUrl,
-} from '../../../../constants/links.constants';
-import { navInfo } from '../../../../constants/nav.constants';
-import { NavInfo } from '../../models/nav.models';
+import { facebookUrl, instagramUrl } from '../../../constants/links.constants';
+import { navInfo } from '../../../constants/nav.constants';
+import { NavInfo } from '../models/nav.models';
 
 @Component({
   selector: 'app-nav-layout-container',

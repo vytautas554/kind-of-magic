@@ -1,0 +1,15 @@
+export interface ImageInfo {
+  imageSrc: string;
+  showTitle: boolean;
+  title: string;
+  description: string;
+  showCta: boolean;
+}
+
+export interface CardSectionData {
+  imageSrc: string;
+  title: string;
+  description: string;
+  reviewPerson?: string;
+  ctaLabel: string;
+}
