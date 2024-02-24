@@ -2,18 +2,50 @@
   position: relative;
   text-align: center;
   color: white;
-    .image {
-      width: 100%;
-      height: 45rem;
-      object-fit: cover;
-    }
-
+  .image {
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+  }
 
   .img-text-container {
     position: absolute;
     top: 10%;
     left: 5%;
-    max-width: 30%;
+    width: 25%;
     text-align: left;
+
+    .description {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    .img-text-container {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    .img-text-container {
+      .description {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .img-text-container {
+      width: 60%;
+      .description {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

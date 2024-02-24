@@ -1,21 +1,23 @@
 <div class="my-2">
   <div class="flex border-top-1"></div>
 
-  <div class="flex">
+  <div class="flex card-container">
     <div
-      class="flex flex-1"
-      [style]="{ height: '45rem' }"
-      *ngFor="let cardData of cardSectionData; let last = last"
+      class="flex card-box border-bottom-1"
+      *ngFor="let cardData of cardSectionData; index as index; let last = last"
     >
-      <div class="flex flex-column justify-content-between p-4 test">
+      <div
+        class="flex flex-column justify-content-between"
+        [ngClass]="innerWidth <= 800 ? 'py-4' : 'p-4'"
+      >
         <img
           *ngIf="cardData.imageSrc && cardData.title !== 'DUK'"
           class="image"
           src="{{ cardData.imageSrc }}"
           alt="Image"
-        >
+        />
         <h1>{{ cardData.title }}</h1>
-        <p class="">{{ cardData.description }}</p>
+        <p class="text-justify pb-5">{{ cardData.description }}</p>
         <p *ngIf="cardData.reviewPerson" class="flex justify-content-end">
           {{ cardData.reviewPerson }}
         </p>
@@ -24,13 +26,20 @@
           class="image"
           src="{{ cardData.imageSrc }}"
           alt="Image"
-        >
-        <app-common-button></app-common-button>
+        />
+        <app-common-button class="pt-5"></app-common-button>
       </div>
 
-      <div *ngIf="!last" class="border-right-1 h-auto"></div>
+      <div
+        *ngIf="!last"
+        [ngClass]="
+          (innerWidth <= 1200 && index === 1) ||
+          (innerWidth <= 800 && index === 0)
+            ? ''
+            : 'border-right-1'
+        "
+        class="h-auto"
+      ></div>
     </div>
   </div>
-
-  <div class="border-bottom-1"></div>
 </div>

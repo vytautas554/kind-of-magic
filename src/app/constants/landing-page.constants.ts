@@ -23,14 +23,6 @@ export const AboutMeImgInfo: ImageInfo = {
 
 export const CardSection: CardSectionData[] = [
   {
-    imageSrc: '',
-    title: 'JŪSŲ DŽIAUGSMO LAIŠKAI',
-    description:
-      'Jeigu nuoširdžiai Tau pavyko – mintimis tikrai teleportavomės į tą nepamirštamą, magišką dieną. Jau kai darbe pateasinau save su kadrais žinojau, kad bus visiškas džiaugsmas širdžiai peržiūrėt viską. Ir buvo. \n\nNiekada nesijaučiau tokia graži, kaip atrodau per Tavo objektyvą, Vaidas man gali paantrinti. Tu perteiki kiekvieną emociją, kiekvieną šypsniuką, ašarą į kampučius įtryškusią. Perteiki kiekvieną rūpestėlį, šokių judesį. Kai pasižiūri tokius gyvus kadrus, supranti, kad nereikia net ir videografo. Roma, džiaugiuosi, kad nebedarai kavos. Nesakau, kad ten buvo kažkas negerai, bet pasaulis būtų praradęs be proto talentingą fotografę, o mes būtumėm niekada neturėję tokių gražių vestuvinių akimirkų. \n\nAčiū, kad mūsų sužadėtuvėmis džiaugeisi kaip šeimos narė, o dabar savo kolkas laimingiausią gyvenimo dieną iki pat dienų pabaigos galėsim stebėti per Tavo nepaprastai šiltą ir tikrą objektyvą. Heres to many more bendrų proga, kurias, tikiuosi, pasirašysi įamžinti ♡',
-    reviewPerson: '- Justina ir Vaidas',
-    ctaLabel: 'Daugiau',
-  },
-  {
     imageSrc:
       '../../assets/img/test-images/DSC_0121.jpg',
     title: 'GALERIJA',
@@ -46,4 +38,12 @@ export const CardSection: CardSectionData[] = [
       'Kaip apsirengti fotosesijai? \nKur fotografuotis? \nNemokame pozuoti. Ką daryti? \n\nTai ko gero patys dažniausi klausimai, kuriuos tenka išgirsti iš Jūsų. Nusprendžiau sudėti visus atsakymus į populiariausius klausimus vienoje vietoje, kad visada patogiai rastumėte. \n\nJeigu atsakymo čia nerasite - lauksiu Jūsų laiško.',
     ctaLabel: 'Daugiau',
   },
+  {
+    imageSrc: '',
+    title: 'JŪSŲ DŽIAUGSMO LAIŠKAI',
+    description:
+      'Jeigu nuoširdžiai Tau pavyko – mintimis tikrai teleportavomės į tą nepamirštamą, magišką dieną. Jau kai darbe pateasinau save su kadrais žinojau, kad bus visiškas džiaugsmas širdžiai peržiūrėt viską. Ir buvo. \n\nNiekada nesijaučiau tokia graži, kaip atrodau per Tavo objektyvą, Vaidas man gali paantrinti. Tu perteiki kiekvieną emociją, kiekvieną šypsniuką, ašarą į kampučius įtryškusią. Perteiki kiekvieną rūpestėlį, šokių judesį. Kai pasižiūri tokius gyvus kadrus, supranti, kad nereikia net ir videografo. Roma, džiaugiuosi, kad nebedarai kavos. Nesakau, kad ten buvo kažkas negerai, bet pasaulis būtų praradęs be proto talentingą fotografę, o mes būtumėm niekada neturėję tokių gražių vestuvinių akimirkų. \n\nAčiū, kad mūsų sužadėtuvėmis džiaugeisi kaip šeimos narė, o dabar savo kolkas laimingiausią gyvenimo dieną iki pat dienų pabaigos galėsim stebėti per Tavo nepaprastai šiltą ir tikrą objektyvą. Heres to many more bendrų proga, kurias, tikiuosi, pasirašysi įamžinti ♡',
+    reviewPerson: '- Justina ir Vaidas',
+    ctaLabel: 'Daugiau',
+  }
 ];

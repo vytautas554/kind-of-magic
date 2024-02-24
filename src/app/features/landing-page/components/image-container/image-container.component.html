@@ -1,8 +1,8 @@
 <div class="pt-2 container">
-  <img class="image" src="{{ imageSrc }}" alt="Image">
+  <img class="image" src="{{ imageSrc }}" alt="Image" />
   <div class="img-text-container">
-    <h1 *ngIf="showTitle" class="title">{{ title }}</h1>
-    <p [ngClass]="showTitle ? 'text-base' : 'text-6xl'">
+    <h1 *ngIf="showTitle">{{ title }}</h1>
+    <p [ngClass]="showTitle ? 'text-base' : 'description'">
       {{ description }}
     </p>
     <app-common-button *ngIf="showCta"></app-common-button>
