@@ -1,0 +1,23 @@
+<div class="flex flex-column border-top-1 justify-content-center">
+  <div class="flex justify-content-center">
+    <app-main-logo-container></app-main-logo-container>
+  </div>
+  <div class="flex justify-content-center">
+    <div
+      class="flex justify-content-center border-top-1 border-bottom-1 w-5 py-3"
+    >
+      <app-main-icons-container></app-main-icons-container>
+    </div>
+  </div>
+  <div class="flex flex-wrap flex-row justify-content-center pt-3">
+    <img
+      *ngFor="let image of images"
+      class="image mr-1"
+      src="{{ image.src }}"
+      alt="{{ image.alt }}"
+    />
+  </div>
+  <div class="flex justify-content-center">
+    <div class="flex justify-content-center border-bottom-1 w-6 py-3"></div>
+  </div>
+</div>

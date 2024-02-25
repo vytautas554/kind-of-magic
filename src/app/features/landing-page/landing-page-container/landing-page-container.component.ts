@@ -7,11 +7,16 @@ import {
 } from '../../../constants/landing-page.constants';
 import { CardSectionData, ImageInfo } from '../models/landing-page.model';
 import { CardSectionContainerComponent } from '../components/card-section-container/card-section-container.component';
+import { MainFooterComponent } from '../../../components/main-footer/main-footer.component';
 
 @Component({
   selector: 'app-landing-page-container',
   standalone: true,
-  imports: [ImageContainerComponent, CardSectionContainerComponent],
+  imports: [
+    ImageContainerComponent,
+    CardSectionContainerComponent,
+    MainFooterComponent,
+  ],
   templateUrl: './landing-page-container.component.html',
   styleUrl: './landing-page-container.component.scss',
 })

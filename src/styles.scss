@@ -5,17 +5,25 @@
 @import "primeicons/primeicons.css";
 
 @font-face {
-  font-family: 'NyghtSerif-Light';
-  src: url('assets/fonts/NyghtSerif/NyghtSerif-Light.woff') ;
+  font-family: "NyghtSerif-Light";
+  src: url("assets/fonts/NyghtSerif/NyghtSerif-Light.woff");
 }
 
 @font-face {
-  font-family: 'Awaken-Regular';
-  src: url('assets/fonts/AwakenRegular/AwakenRegular-WyZAO.ttf') ;
+  font-family: "Awaken-Regular";
+  src: url("assets/fonts/AwakenRegular/AwakenRegular-WyZAO.ttf");
 }
 
 body {
   background-color: #fff0e0;
   white-space: pre-line;
   font-family: Awaken-Regular;
+}
+
+.desktop-icon {
+  font-size: 1.7rem;
+}
+
+.mobile-icon {
+  font-size: 1.2rem;
 }

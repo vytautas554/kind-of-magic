@@ -1,0 +1,14 @@
+<div class="flex">
+  <a (click)="redirectToUrl(facebookUrl)" class="pr-1" style="cursor: pointer">
+    <i
+      class="pi pi-facebook mr-2"
+      [ngClass]="innerWidth >= 500 ? 'desktop-icon' : 'mobile-icon'"
+    ></i>
+  </a>
+  <a (click)="redirectToUrl(instagramUrl)" style="cursor: pointer">
+    <i
+      class="pi pi-instagram"
+      [ngClass]="innerWidth >= 500 ? 'desktop-icon' : 'mobile-icon'"
+    ></i>
+  </a>
+</div>
