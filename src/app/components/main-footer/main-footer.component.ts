@@ -43,5 +43,13 @@ export class MainFooterComponent {
       src: '../../../assets/img/test-images/Justina ir Vaidas.1052-Edit.jpg',
       alt: 'Justina ir Vaidas',
     },
+    {
+      src: '../../../assets/img/test-images/Justina ir Vaidas.1052-Edit.jpg',
+      alt: 'Justina ir Vaidas',
+    },
+    {
+      src: '../../../assets/img/test-images/Justina ir Vaidas.1052-Edit.jpg',
+      alt: 'Justina ir Vaidas',
+    },
   ];
 }

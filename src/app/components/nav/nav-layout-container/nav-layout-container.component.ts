@@ -6,6 +6,7 @@ import { navInfo } from '../../../constants/nav.constants';
 import { NavInfo } from '../models/nav.models';
 import { MainLogoContainerComponent } from '../../main-logo-container/main-logo-container.component';
 import { MainIconsContainerComponent } from '../../main-icons-container/main-icons-container.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-layout-container',
@@ -25,6 +26,8 @@ export class NavLayoutContainerComponent implements OnInit {
   public navInfoArray: NavInfo[] = navInfo;
   public innerWidth: number;
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.innerWidth = window.innerWidth;
   }
@@ -36,5 +39,10 @@ export class NavLayoutContainerComponent implements OnInit {
 
   public showSidebar() {
     this.sidebarVisible = true;
+  }
+
+  public navigateTo(path: string): void {
+    this.router.navigate([path]);
+    this.sidebarVisible = false;
   }
 }

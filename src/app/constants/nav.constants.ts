@@ -4,16 +4,16 @@ export const navInfo: NavInfo[] = [
   {
     icon: 'pi-home',
     name: 'Pagrindinis',
-    link: '',
+    path: 'pagrindinis',
   },
   {
     icon: 'pi-cart-plus',
     name: 'Kainos',
-    link: '',
+    path: 'kainos',
   },
   {
     icon: 'pi-camera',
     name: 'Apie mane',
-    link: '',
+    path: 'apie-mane',
   },
 ];
