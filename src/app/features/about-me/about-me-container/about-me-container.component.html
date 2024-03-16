@@ -1,1 +1,16 @@
-<p>about-me-container works!</p>
+<div class="flex border-bottom-1" *ngFor="let aboutMe of aboutMeInfo">
+  <div class="border-right-1">
+    <img class="image py-5 pr-5" src="{{ aboutMe.imageSrc }}" />
+  </div>
+  <div class="flex flex-column justify-content-between">
+    <div class="pl-5">
+      <h1>{{ aboutMe.title }}</h1>
+      <p>
+        {{ aboutMe.description }}
+      </p>
+    </div>
+    <div class="h-3rem border-top-1">
+      <p class="pl-5">{{ aboutMe.slogan }}</p>
+    </div>
+  </div>
+</div>

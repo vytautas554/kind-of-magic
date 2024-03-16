@@ -5,6 +5,6 @@
     <p [ngClass]="showTitle ? 'text-base' : 'description'">
       {{ description }}
     </p>
-    <app-common-button *ngIf="showCta"></app-common-button>
+    <app-common-button *ngIf="showCta" [path]="aboutMePath"></app-common-button>
   </div>
 </div>

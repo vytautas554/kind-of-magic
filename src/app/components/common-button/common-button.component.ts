@@ -1,5 +1,6 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-common-button',
@@ -12,4 +13,11 @@ import { ButtonModule } from 'primeng/button';
 export class CommonButtonComponent {
   @Input() public isRounded = true;
   @Input() public label = 'Daugiau';
+  @Input() public path: string;
+
+  constructor(private router: Router) {}
+
+  public navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
 }

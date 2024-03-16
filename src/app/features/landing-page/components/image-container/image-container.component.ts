@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ImageModule } from 'primeng/image';
 import { CommonButtonComponent } from '../../../../components/common-button/common-button.component';
+import { aboutMePath } from '../../../../constants/about-me.constants';
 
 @Component({
   selector: 'app-image-container',
@@ -16,4 +17,6 @@ export class ImageContainerComponent {
   @Input() public description = '';
   @Input() public imageSrc = '';
   @Input() public title = '';
+
+  public aboutMePath: string = aboutMePath;
 }
