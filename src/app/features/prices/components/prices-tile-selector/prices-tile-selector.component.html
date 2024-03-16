@@ -1,0 +1,34 @@
+<!-- TODO think of better solution to avoid code duplication -->
+<ng-container *ngIf="isScreenSizeDesktop$ | async; else mobileView">
+  <ng-container *ngFor="let plan of planInfo">
+    <div class="relative w-full h-full">
+      <div class="rotate-content text-3xl absolute">{{ plan.category }}</div>
+    </div>
+
+    <div class="pl-8 w-full">
+      <div class="flex flex-column">
+        <app-prices-tile
+          [serviceInfo]="plan.serviceInfo"
+          [extraServices]="plan.extraServices"
+        />
+      </div>
+    </div>
+  </ng-container>
+</ng-container>
+
+<ng-template #mobileView>
+  <ng-container *ngFor="let plan of planInfo">
+    <div class="relative w-full h-full">
+      <div class="rotate-content text-3xl absolute">{{ plan.category }}</div>
+    </div>
+
+    <div class="pl-8 w-full">
+      <div class="flex flex-column">
+        <app-price-tile-mobile
+          [serviceInfo]="plan.serviceInfo"
+          [extraServices]="plan.extraServices"
+        />
+      </div>
+    </div>
+  </ng-container>
+</ng-template>
