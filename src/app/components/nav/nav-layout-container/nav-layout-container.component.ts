@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
@@ -21,16 +21,12 @@ import { Router } from '@angular/router';
   templateUrl: './nav-layout-container.component.html',
   styleUrl: './nav-layout-container.component.scss',
 })
-export class NavLayoutContainerComponent implements OnInit {
+export class NavLayoutContainerComponent {
   public sidebarVisible = false;
   public navInfoArray: NavInfo[] = navInfo;
   public innerWidth: number;
 
   constructor(private router: Router) {}
-
-  ngOnInit() {
-    this.innerWidth = window.innerWidth;
-  }
 
   @HostListener('window:resize', ['$event'])
   public onWindowResize(event: any): void {

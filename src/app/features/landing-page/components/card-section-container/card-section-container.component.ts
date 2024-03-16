@@ -1,4 +1,4 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { CommonButtonComponent } from '../../../../components/common-button/common-button.component';
 import { ImageModule } from 'primeng/image';
@@ -12,15 +12,11 @@ import { CardSectionData } from '../../models/landing-page.model';
   templateUrl: './card-section-container.component.html',
   styleUrl: './card-section-container.component.scss',
 })
-export class CardSectionContainerComponent implements OnInit {
+export class CardSectionContainerComponent {
   @Input() public showImg = true;
   @Input() public cardSectionData: CardSectionData[];
 
   public innerWidth: number;
-
-  ngOnInit() {
-    this.innerWidth = window.innerWidth;
-  }
 
   @HostListener('window:resize', ['$event'])
   public onWindowResize(event: any): void {
