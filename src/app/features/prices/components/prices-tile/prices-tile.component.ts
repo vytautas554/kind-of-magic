@@ -12,5 +12,4 @@ import { ServiceInfo } from '../../prices.type';
 })
 export class PricesTileComponent {
   @Input() serviceInfo: ServiceInfo[];
-  @Input() extraServices: string[];
 }

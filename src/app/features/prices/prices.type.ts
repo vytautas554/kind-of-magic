@@ -1,15 +1,22 @@
 export interface PlanInfo {
-  category: string;
+  header: string;
+  subHeader?: string;
   serviceInfo: ServiceInfo[];
-  extraServices: string[];
+  specialOffer?: SpecialOffer;
 }
 
 export interface ServiceInfo {
   photographyValue: PhotographyValue;
   includedServices: string[];
+  extraServices: string[];
 }
 
 interface PhotographyValue {
   time: string;
   price: string;
+}
+
+interface SpecialOffer {
+  header: string;
+  offer: string;
 }

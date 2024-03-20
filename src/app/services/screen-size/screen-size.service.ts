@@ -4,7 +4,7 @@ import { BehaviorSubject, distinctUntilChanged, fromEvent, map } from 'rxjs';
 
 import { MIN_LG_WIDTH, MIN_MD_WIDTH } from './screen-size.const';
 import { ScreenSize } from './screen-size.type';
-import { WINDOW } from '../../const/window-injection-token';
+import { WINDOW } from '../../constants/window-injection-token';
 
 @Injectable({ providedIn: 'root' })
 export class ScreenSizeService {
