@@ -1,16 +1,20 @@
-<!-- TODO think of better solution to avoid code duplication -->
 <ng-container *ngIf="isScreenSizeDesktop$ | async; else mobileView">
   <ng-container *ngFor="let plan of planInfo">
-    <div class="relative w-full h-full">
-      <div class="rotate-content text-3xl absolute">{{ plan.category }}</div>
-    </div>
-
-    <div class="pl-8 w-full">
-      <div class="flex flex-column">
-        <app-prices-tile
-          [serviceInfo]="plan.serviceInfo"
-          [extraServices]="plan.extraServices"
-        />
+    <div class="flex gap-2">
+      <div class="text-3xl w-2 rotate-content">
+        {{ plan.header }} <br />
+        <span>{{ plan.subHeader }}</span>
+      </div>
+      <div class="flex flex-column w-full">
+        <app-prices-tile [serviceInfo]="plan.serviceInfo" />
+        <ng-container *ngIf="plan.specialOffer">
+          <div
+            class="py-3 border-1 border-top-none gap-5 flex align-items-center border-right-none"
+          >
+            <div class="custom-width pl-3 font-bold">{{ plan.specialOffer.header }}</div>
+            <div class="w-full pl-2">{{ plan.specialOffer.offer }}</div>
+          </div>
+        </ng-container>
       </div>
     </div>
   </ng-container>
@@ -18,16 +22,22 @@
 
 <ng-template #mobileView>
   <ng-container *ngFor="let plan of planInfo">
-    <div class="relative w-full h-full">
-      <div class="rotate-content text-3xl absolute">{{ plan.category }}</div>
-    </div>
+    <div class="flex gap-2">
+      <div class="rotate-content text-3xl w-6">
+        {{ plan.header }} <br />
+        <span>{{ plan.subHeader }}</span>
+      </div>
 
-    <div class="pl-8 w-full">
-      <div class="flex flex-column">
-        <app-price-tile-mobile
-          [serviceInfo]="plan.serviceInfo"
-          [extraServices]="plan.extraServices"
-        />
+      <div class="flex flex-column w-full">
+        <app-price-tile-mobile [serviceInfo]="plan.serviceInfo" />
+        <ng-container *ngIf="plan.specialOffer">
+          <div
+            class="pt-1 border-1 border-top-none gap-2 flex flex-column border-right-none"
+          >
+            <div class="p-1 pl-3 font-bold">{{ plan.specialOffer.header }}</div>
+            <div class="p-1 pl-3 w-full">{{ plan.specialOffer.offer }}</div>
+          </div>
+        </ng-container>
       </div>
     </div>
   </ng-container>

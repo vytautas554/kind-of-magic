@@ -1,21 +1,24 @@
 <div
   *ngFor="let service of serviceInfo"
-  class="pt-1 border-1 border-top-none flex flex-column gap-4 border-right-none"
+  class="pt-3 border-1 border-top-none flex flex-column gap-3 border-right-none"
 >
-  <div class="flex flex-column gap-1 p-1 pl-2">
-    <div>{{ service.photographyValue.time }}</div>
-    <div>{{ service.photographyValue.price }}</div>
+  <div class="flex flex-column gap-1 p-1 pl-3">
+    <div class="font-bold">{{ service.photographyValue.time }}</div>
+    <div class="font-bold">{{ service.photographyValue.price }}</div>
   </div>
-  <div class="w-full pl-2">
+
+  <div class="w-full">
     <ul
       *ngFor="let includedService of service.includedServices"
-      class="list-none p-1 m-0"
+      class="list-none p-1 pl-3 m-0"
     >
       <li>{{ includedService }}</li>
     </ul>
-    <div class="flex flex-column border-top-1">
-      <div *ngFor="let extraService of extraServices; let first = first">
-        <div class="p-1" [ngClass]="!first ? 'border-top-1' : ''">
+    <div class="flex flex-column border-top-1 mt-3">
+      <div
+        *ngFor="let extraService of service.extraServices; let first = first"
+      >
+        <div class="p-1 pl-3" [ngClass]="!first ? 'border-top-1' : ''">
           {{ extraService }}
         </div>
       </div>

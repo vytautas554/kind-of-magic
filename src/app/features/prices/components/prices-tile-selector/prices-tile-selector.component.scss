@@ -1,6 +1,11 @@
 .rotate-content {
-  transform: rotate(-90deg);
-  bottom: -215px;
-  left: -130px;
-  white-space: nowrap; /* Prevents word wrapping */
+  transform: rotate(180deg) translateY(100%);
+  transform-origin: bottom center;
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+}
+
+.custom-width {
+  width: 26.6%;
+  min-width: 10.5rem;
 }
