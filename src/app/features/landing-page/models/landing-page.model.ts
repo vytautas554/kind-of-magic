@@ -10,6 +10,7 @@ export interface CardSectionData {
   imageSrc: string;
   title: string;
   description: string;
-  reviewPerson?: string;
   ctaLabel: string;
+  routePath: string;
+  reviewPerson?: string;
 }

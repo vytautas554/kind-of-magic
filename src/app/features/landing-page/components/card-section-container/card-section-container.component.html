@@ -27,7 +27,10 @@
           src="{{ cardData.imageSrc }}"
           alt="Image"
         />
-        <app-common-button class="pt-5"></app-common-button>
+        <app-common-button
+          class="pt-5"
+          [path]="cardData.routePath"
+        ></app-common-button>
       </div>
 
       <div

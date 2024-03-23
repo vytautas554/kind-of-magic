@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AboutMe } from '../models/about-me.models';
 import { AboutMeInfo } from '../../../constants/about-me.constants';
 import { CommonModule } from '@angular/common';
+import { ScreenSizeService } from '../../../services/screen-size/screen-size.service';
 
 @Component({
   selector: 'app-about-me-container',
@@ -12,4 +13,9 @@ import { CommonModule } from '@angular/common';
 })
 export class AboutMeContainerComponent {
   public aboutMeInfo: AboutMe[] = AboutMeInfo;
+
+  readonly isScreenSizeTabletOrMobile$ =
+    this._screenSizeService.isScreenSizeTabletOrMobile$;
+
+  constructor(private readonly _screenSizeService: ScreenSizeService) {}
 }

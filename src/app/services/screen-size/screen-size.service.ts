@@ -21,6 +21,10 @@ export class ScreenSizeService {
     map((size) => size === ScreenSize.mobile),
   );
 
+  readonly isScreenSizeTabletOrMobile$ = this.screenSize$.pipe(
+    map((size) => size === ScreenSize.tablet || size === ScreenSize.mobile),
+  );
+
   readonly isScreenSizeDesktop$ = this.screenSize$.pipe(
     map((size) => size === ScreenSize.desktop),
   );

@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  color: #6e6767;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 1rem;
+    .title {
+      font-size: 1rem;
+    }
+  }
+}
