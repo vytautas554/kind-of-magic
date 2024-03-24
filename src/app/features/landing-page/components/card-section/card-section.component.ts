@@ -1,9 +1,10 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { CommonButtonComponent } from '../../../../components/common-button/common-button.component';
 import { ImageModule } from 'primeng/image';
 import { CommonModule } from '@angular/common';
 import { CardSectionData } from '../../landing-page.type';
+import { ScreenSizeService } from '../../../../services/screen-size/screen-size.service';
 
 @Component({
   selector: 'app-card-section',
@@ -16,10 +17,7 @@ export class CardSectionComponent {
   @Input() public showImg = true;
   @Input() public cardSectionData: CardSectionData[];
 
-  public innerWidth: number;
+  readonly rawScreenSize = this._screenSizeService.rawScreenSize$.value;
 
-  @HostListener('window:resize', ['$event'])
-  public onWindowResize(event: any): void {
-    this.innerWidth = event.target.innerWidth;
-  }
+  constructor(private readonly _screenSizeService: ScreenSizeService) {}
 }

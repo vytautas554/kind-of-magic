@@ -26,7 +26,7 @@ export class NavComponent {
   public navInfoArray: NavInfo[] = NAV_INFO;
   public innerWidth: number;
 
-  constructor(private router: Router) {}
+  constructor(private readonly router: Router) {}
 
   @HostListener('window:resize', ['$event'])
   public onWindowResize(event: any): void {

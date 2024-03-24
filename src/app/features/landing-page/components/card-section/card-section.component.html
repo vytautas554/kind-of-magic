@@ -8,7 +8,7 @@
     >
       <div
         class="flex flex-column justify-content-between"
-        [ngClass]="innerWidth <= 800 ? 'py-4' : 'p-4'"
+        [ngClass]="rawScreenSize <= 800 ? 'py-4' : 'p-4'"
       >
         <img
           *ngIf="cardData.imageSrc && cardData.title !== 'DUK'"
@@ -36,8 +36,8 @@
       <div
         *ngIf="!last"
         [ngClass]="
-          (innerWidth <= 1200 && index === 1) ||
-          (innerWidth <= 800 && index === 0)
+          (rawScreenSize <= 1200 && index === 1) ||
+          (rawScreenSize <= 800 && index === 0)
             ? ''
             : 'border-right-1'
         "

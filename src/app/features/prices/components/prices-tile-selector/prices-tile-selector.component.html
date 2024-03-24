@@ -11,7 +11,9 @@
           <div
             class="py-3 border-1 border-top-none gap-5 flex align-items-center border-right-none"
           >
-            <div class="custom-width pl-3 font-bold">{{ plan.specialOffer.header }}</div>
+            <div class="custom-width pl-3 font-bold">
+              {{ plan.specialOffer.header }}
+            </div>
             <div class="w-full pl-2">{{ plan.specialOffer.offer }}</div>
           </div>
         </ng-container>
@@ -23,7 +25,7 @@
 <ng-template #mobileView>
   <ng-container *ngFor="let plan of planInfo">
     <div class="flex gap-2">
-      <div class="rotate-content text-3xl w-6">
+      <div class="rotate-content text-3xl w-3">
         {{ plan.header }} <br />
         <span>{{ plan.subHeader }}</span>
       </div>
