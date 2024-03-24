@@ -36,7 +36,7 @@ export const CardSection: CardSectionData[] = [
     description:
       'Kaip apsirengti fotosesijai? \nKur fotografuotis? \nNemokame pozuoti. Ką daryti? \n\nTai ko gero patys dažniausi klausimai, kuriuos tenka išgirsti iš Jūsų. Nusprendžiau sudėti visus atsakymus į populiariausius klausimus vienoje vietoje, kad visada patogiai rastumėte. \n\nJeigu atsakymo čia nerasite - lauksiu Jūsų laiško.',
     ctaLabel: 'Daugiau',
-    routePath: 'puslapis-atnaujinamas',
+    routePath: 'duk',
   },
   {
     imageSrc: '',

@@ -1,4 +1,4 @@
-import { AboutMe } from '../features/about-me/models/about-me.models';
+import { AboutMe } from './about-me.type';
 
 export const aboutMePath = 'apie-mane';
 

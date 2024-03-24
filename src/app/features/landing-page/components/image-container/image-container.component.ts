@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ImageModule } from 'primeng/image';
 import { CommonButtonComponent } from '../../../../components/common-button/common-button.component';
-import { aboutMePath } from '../../../../constants/about-me.constants';
+import { aboutMePath } from '../../../about-me/about-me.const';
 
 @Component({
   selector: 'app-image-container',

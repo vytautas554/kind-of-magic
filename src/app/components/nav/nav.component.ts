@@ -2,28 +2,28 @@ import { Component, HostListener } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
-import { navInfo } from '../../../constants/nav.constants';
-import { NavInfo } from '../models/nav.models';
-import { MainLogoContainerComponent } from '../../main-logo-container/main-logo-container.component';
-import { MainIconsContainerComponent } from '../../main-icons-container/main-icons-container.component';
+import { NAV_INFO } from './nav.constants';
+import { NavInfo } from './nav.type';
+import { MainLogoComponent } from '../main-logo-container/main-logo-container.component';
+import { MainIconsContainerComponent } from '../main-icons-container/main-icons-container.component';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-nav-layout-container',
+  selector: 'app-nav',
   standalone: true,
   imports: [
     ButtonModule,
     SidebarModule,
     CommonModule,
-    MainLogoContainerComponent,
+    MainLogoComponent,
     MainIconsContainerComponent,
   ],
-  templateUrl: './nav-layout-container.component.html',
-  styleUrl: './nav-layout-container.component.scss',
+  templateUrl: './nav.component.html',
+  styleUrl: './nav.component.scss',
 })
-export class NavLayoutContainerComponent {
+export class NavComponent {
   public sidebarVisible = false;
-  public navInfoArray: NavInfo[] = navInfo;
+  public navInfoArray: NavInfo[] = NAV_INFO;
   public innerWidth: number;
 
   constructor(private router: Router) {}

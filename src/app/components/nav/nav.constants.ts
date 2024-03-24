@@ -1,6 +1,6 @@
-import { NavInfo } from '../components/nav/models/nav.models';
+import { NavInfo } from './nav.type';
 
-export const navInfo: NavInfo[] = [
+export const NAV_INFO: NavInfo[] = [
   {
     icon: 'pi-home',
     name: 'Pagrindinis',
@@ -15,5 +15,10 @@ export const navInfo: NavInfo[] = [
     icon: 'pi-camera',
     name: 'Apie mane',
     path: 'apie-mane',
+  },
+  {
+    icon: 'pi-book',
+    name: 'DUK',
+    path: 'duk',
   },
 ];

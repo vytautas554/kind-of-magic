@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainLogoContainerComponent } from './main-logo-container.component';
+import { MainLogoComponent } from './main-logo-container.component';
 
 describe('MainLogoContainerComponent', () => {
-  let component: MainLogoContainerComponent;
-  let fixture: ComponentFixture<MainLogoContainerComponent>;
+  let component: MainLogoComponent;
+  let fixture: ComponentFixture<MainLogoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainLogoContainerComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(MainLogoContainerComponent);
+      imports: [MainLogoComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(MainLogoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

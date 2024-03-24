@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
-import { AboutMeContainerComponent } from './features/about-me/about-me-container/about-me-container.component';
+import { AboutMeComponent } from './features/about-me/about-me.component';
 import { LandingPageContainerComponent } from './features/landing-page/landing-page-container/landing-page-container.component';
 import { PricesComponent } from './features/prices/prices.component';
 import { PageUnderConstructionComponent } from './components/page-under-construction/page-under-construction.component';
+import { DukComponent } from './features/duk/duk.component';
 
 export const routes: Routes = [
   {
@@ -16,8 +17,9 @@ export const routes: Routes = [
   },
   {
     path: 'apie-mane',
-    component: AboutMeContainerComponent,
+    component: AboutMeComponent,
   },
   { path: 'kainos', component: PricesComponent },
+  { path: 'duk', component: DukComponent },
   { path: 'puslapis-atnaujinamas', component: PageUnderConstructionComponent },
 ];
