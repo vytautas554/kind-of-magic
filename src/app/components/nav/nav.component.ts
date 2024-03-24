@@ -4,8 +4,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
 import { NAV_INFO } from './nav.constants';
 import { NavInfo } from './nav.type';
-import { MainLogoComponent } from '../main-logo-container/main-logo-container.component';
-import { MainIconsContainerComponent } from '../main-icons-container/main-icons-container.component';
+import { MainLogoComponent } from '../main-logo/main-logo.component';
+import { MainIconsComponent } from '../main-icons/main-icons.component';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
     SidebarModule,
     CommonModule,
     MainLogoComponent,
-    MainIconsContainerComponent,
+    MainIconsComponent,
   ],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss',

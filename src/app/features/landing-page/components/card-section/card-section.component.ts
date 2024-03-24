@@ -3,16 +3,16 @@ import { CardModule } from 'primeng/card';
 import { CommonButtonComponent } from '../../../../components/common-button/common-button.component';
 import { ImageModule } from 'primeng/image';
 import { CommonModule } from '@angular/common';
-import { CardSectionData } from '../../models/landing-page.model';
+import { CardSectionData } from '../../landing-page.type';
 
 @Component({
-  selector: 'app-card-section-container',
+  selector: 'app-card-section',
   standalone: true,
   imports: [CardModule, ImageModule, CommonModule, CommonButtonComponent],
-  templateUrl: './card-section-container.component.html',
-  styleUrl: './card-section-container.component.scss',
+  templateUrl: './card-section.component.html',
+  styleUrl: './card-section.component.scss',
 })
-export class CardSectionContainerComponent {
+export class CardSectionComponent {
   @Input() public showImg = true;
   @Input() public cardSectionData: CardSectionData[];
 

@@ -1,7 +1,4 @@
-import {
-  CardSectionData,
-  ImageInfo,
-} from '../features/landing-page/models/landing-page.model';
+import { CardSectionData, ImageInfo } from './landing-page.type';
 
 export const HeaderImgInfo: ImageInfo = {
   imageSrc: '../../assets/img/test-images/ggg-Edit.jpg',

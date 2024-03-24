@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { MainLogoComponent } from '../main-logo-container/main-logo-container.component';
+import { MainLogoComponent } from '../main-logo/main-logo.component';
 import { instagramUrl } from '../../constants/links.constants';
-import { MainIconsContainerComponent } from '../main-icons-container/main-icons-container.component';
+import { MainIconsComponent } from '../main-icons/main-icons.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main-footer',
   standalone: true,
-  imports: [MainLogoComponent, MainIconsContainerComponent, CommonModule],
+  imports: [MainLogoComponent, MainIconsComponent, CommonModule],
   templateUrl: './main-footer.component.html',
   styleUrl: './main-footer.component.scss',
 })
