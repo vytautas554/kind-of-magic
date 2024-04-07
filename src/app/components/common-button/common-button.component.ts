@@ -15,7 +15,7 @@ export class CommonButtonComponent {
   @Input() public label = 'Daugiau';
   @Input() public path: string;
 
-  constructor(private router: Router) {}
+  constructor(private readonly router: Router) {}
 
   public navigateTo(path: string) {
     this.router.navigate([path]);

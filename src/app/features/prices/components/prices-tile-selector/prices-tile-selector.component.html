@@ -6,10 +6,10 @@
         <span>{{ plan.subHeader }}</span>
       </div>
       <div class="flex flex-column w-full">
-        <app-prices-tile [serviceInfo]="plan.serviceInfo" />
+        <app-prices-tile [planInfo]="plan" />
         <ng-container *ngIf="plan.specialOffer">
           <div
-            class="py-3 border-1 border-top-none gap-5 flex align-items-center border-right-none"
+            class="py-3 border-1 border-bottom-2 border-top-none gap-5 flex align-items-center border-right-none"
           >
             <div class="custom-width pl-3 font-bold">
               {{ plan.specialOffer.header }}
@@ -31,10 +31,10 @@
       </div>
 
       <div class="flex flex-column w-full">
-        <app-price-tile-mobile [serviceInfo]="plan.serviceInfo" />
+        <app-price-tile-mobile [planInfo]="plan" />
         <ng-container *ngIf="plan.specialOffer">
           <div
-            class="pt-1 border-1 border-top-none gap-2 flex flex-column border-right-none"
+            class="pt-1 border-1 border-bottom-2 border-top-none gap-2 flex flex-column border-right-none"
           >
             <div class="p-1 pl-3 font-bold">{{ plan.specialOffer.header }}</div>
             <div class="p-1 pl-3 w-full">{{ plan.specialOffer.offer }}</div>

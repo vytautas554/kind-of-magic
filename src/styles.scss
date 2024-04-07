@@ -4,20 +4,10 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
-@font-face {
-  font-family: "NyghtSerif-Light";
-  src: url("assets/fonts/NyghtSerif/NyghtSerif-Light.woff");
-}
-
-@font-face {
-  font-family: "Awaken-Regular";
-  src: url("assets/fonts/AwakenRegular/AwakenRegular-WyZAO.ttf");
-}
-
 body {
   background-color: #fff5ed;
   white-space: pre-line;
-  font-family: Awaken-Regular;
+  font-family: "DM Sans", sans-serif;
 }
 
 .desktop-icon {

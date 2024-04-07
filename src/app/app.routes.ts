@@ -21,5 +21,5 @@ export const routes: Routes = [
   },
   { path: 'kainos', component: PricesComponent },
   { path: 'duk', component: DukComponent },
-  { path: 'puslapis-atnaujinamas', component: PageUnderConstructionComponent },
+  { path: '**', component: PageUnderConstructionComponent },
 ];

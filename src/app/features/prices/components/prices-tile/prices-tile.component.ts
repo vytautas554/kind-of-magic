@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ServiceInfo } from '../../prices.type';
+import { PlanInfo } from '../../prices.type';
 
 @Component({
   selector: 'app-prices-tile',
@@ -11,5 +11,5 @@ import { ServiceInfo } from '../../prices.type';
   styleUrl: './prices-tile.component.scss',
 })
 export class PricesTileComponent {
-  @Input() serviceInfo: ServiceInfo[];
+  @Input() planInfo: PlanInfo;
 }

@@ -1,6 +1,7 @@
 <div
-  *ngFor="let service of serviceInfo"
+  *ngFor="let service of planInfo.serviceInfo"
   class="pt-1 border-1 border-top-none gap-2 flex border-right-none"
+  [ngClass]="!planInfo.specialOffer ? 'border-bottom-2' : ''"
 >
   <div class="flex flex-column gap-1 p-1 pl-3 item-price-height">
     <div class="font-bold">{{ service.photographyValue.time }}</div>
