@@ -1,7 +1,12 @@
-<p-accordion *ngFor="let duk of dukInfo">
-  <p-accordionTab header="{{ duk.question }}">
-    <p>
-      {{ duk.answer }}
-    </p>
-  </p-accordionTab>
+<p-accordion>
+  <ng-container *ngFor="let duk of dukInfo; let first = first">
+    <p-accordionTab
+      [headerStyleClass]="first ? '' : 'custom-border'"
+      header="{{ duk.question }}"
+    >
+      <p>
+        {{ duk.answer }}
+      </p>
+    </p-accordionTab></ng-container
+  >
 </p-accordion>
