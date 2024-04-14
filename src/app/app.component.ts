@@ -9,6 +9,4 @@ import { NavComponent } from './components/nav/nav.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'kind-of-magic-fe';
-}
+export class AppComponent {}

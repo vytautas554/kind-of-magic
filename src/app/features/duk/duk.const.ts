@@ -2,7 +2,7 @@ import { DukInfo } from './duk.type';
 
 export const DUK_INFO: DukInfo[] = [
   {
-    question: 'Kuriame mieste fotografuoja R Luz?',
+    question: 'Kuriame mieste fotografuoja A Kind Of Magic?',
     answer:
       'Studija įsikūrusi Kauno mieste, tačiau vykstu fotografuoti visur, kur mane pakviečia, visoje Lietuvoje. Vykstant fotografuoti toliau nuo Kauno, taikomas kelio mokestis (išskyrus atvejus, kuomet vykstu fotografuoti vestuves, tuomet kelio mokestis jau įskaičiuotas į nurodytą valandos kainą)',
   },
@@ -14,7 +14,7 @@ export const DUK_INFO: DukInfo[] = [
   {
     question: 'Kaip susisiekti ir rezervuoti laiką fotosesijai?',
     answer:
-      'Laukiu Jūsų laiškų Facebook R Luz Photography puslapyje arba Instagram @r_luz_photography. Užklausoje visada stenkitės nurodyti kuo daugiau informacijos (koks fotosesijos tipas domina, data ir pan.), tuomet galėsiu Jums pateikti išsamų atsakymą. Jeigu informacijos jokios nėra - taip ir galite parašyti “kol kas nieko nežinome”, aš padėsiu susidėlioti mintis : ) Į darbinius laiškus atsakau darbo dienomis. Į visus kitus, pvz. norit pasidalinti smagiu reels/tiktoku - nors ir vidury nakties : )',
+      'Laukiu Jūsų laiškų Facebook A Kind Of Magic Photography puslapyje arba Instagram @akindofmagic.photography. Užklausoje visada stenkitės nurodyti kuo daugiau informacijos (koks fotosesijos tipas domina, data ir pan.), tuomet galėsiu Jums pateikti išsamų atsakymą. Jeigu informacijos jokios nėra - taip ir galite parašyti “kol kas nieko nežinome”, aš padėsiu susidėlioti mintis : ) Į darbinius laiškus atsakau darbo dienomis. Į visus kitus, pvz. norit pasidalinti smagiu reels/tiktoku - nors ir vidury nakties : )',
   },
   {
     question:
@@ -23,7 +23,7 @@ export const DUK_INFO: DukInfo[] = [
       'Turiu tikrai solidų sąrašą pačių gražiausių lokacijų Jūsų idėjoms įgyvendinti, tačiau visada esu atvira naujoms idėjoms. Man labai patinka dar nematytos, įdomios vietos, ypatingai tos, kurios fotografuojamiems žmonėms kažką reiškia. Tikiu, kad tada fotosesijos nuotraukos būna dar ypatingesnės. Fotosesijų vietas visada derinu kartu su žmonėmis. Juk visi labai skirtingi, tad visuomet bandau išsiaiškinti, kokia aplinka artimiausia širdžiai būtent Jums.',
   },
   {
-    question: 'Koks jausmas turėti fotosesiją pas R Luz Photography?',
+    question: 'Koks jausmas turėti fotosesiją pas A Kind Of Magic Photography?',
     answer:
       'Man labai svarbus mano ir mano klientų tarpusavio ryšys jau nuo pirmų akimirkų. Noriu, kad mano žmonės jaustųsi jaukiai dar prieš man išsitraukiant fotoaparatą. Man patinka pakalbinti, susipažinti, kažką apie Jus sužinoti. Šalti ir lakoniški “kliento - paslaugos tiekėjo” santykiai man nėra artimi. Nejaukioje tyloje nebūsime, galiu tai pažadėti : ) Visi pradžioje jaučiasi kiek nepatogiai prieš fotoaparato objektyvą ir tai visiškai normalu! Todėl ir esu tam, kad galėčiau Jums padėti kuo greičiau apsiprasti, kad vėl jaustumėtės labiau savimi ir tada sukurtume daug nuostabių kadrų!',
   },
@@ -84,7 +84,7 @@ export const DUK_INFO: DukInfo[] = [
       'Nemokate pozuoti?? Valio! Ir jokiu būdų nepozuokite! Patys gražiausi ir gyviausi kadrai yra tie, kuriuose nepozuojate. Vaikščiokite (o gal net geriau pabėgiokite), apsikabinę palinguokite, pasikalbėkite, vienas kito plaukais pažaiskite, pajuokaukite ir žinoma nusijuokite ar tiesiog vienas kitam nusišypsokite - juk visa tai puikiausiai mokate! Mėgaukitės akimirka! Mėgaukitės laiku su savo mylimiausiais (arba savimi). Didžioji gyvų emocingų nuotraukų paslaptis - nesustinkite, judėkite judėkite judėkite! Ir žinoma, jokiu būdu netramdykite savo emocijų! Emocijos yra nuostabiai gražu. Fotosesija yra labai smagus nuotykis! Netikite? Leiskite man pakeisti Jūsų požiūrį!',
   },
   {
-    question: 'Kuriame mieste fotografuoja R Luz?',
+    question: 'Kuriame mieste fotografuoja A Kind Of Magic?',
     answer:
       'Studija įsikūrusi Kauno mieste, tačiau vykstu fotografuoti visur, kur mane pakviečia, visoje Lietuvoje. Vykstant fotografuoti toliau nuo Kauno, taikomas kelio mokestis (išskyrus atvejus, kuomet vykstu fotografuoti vestuves, tuomet kelio mokestis jau įskaičiuotas į nurodytą valandos kainą).',
   },
@@ -96,7 +96,7 @@ export const DUK_INFO: DukInfo[] = [
   {
     question: 'Kaip susisiekti ir rezervuoti laiką fotosesijai?',
     answer:
-      'Laukiu Jūsų laiškų Facebook R Luz Photography puslapyje arba Instagram @r_luz_photography. Užklausoje visada stenkitės nurodyti kuo daugiau informacijos (koks fotosesijos tipas domina, data ir pan.), tuomet galėsiu Jums pateikti išsamų atsakymą. Jeigu informacijos jokios nėra - taip ir galite parašyti “kol kas nieko nežinome”, aš padėsiu susidėlioti mintis : ) Į darbinius laiškus atsakau darbo dienomis. Į visus kitus, pvz. norit pasidalinti smagiu reels/tiktoku - nors ir vidury nakties : )',
+      'Laukiu Jūsų laiškų Facebook A Kind Of Magic Photography puslapyje arba Instagram @akindofmagic.photography. Užklausoje visada stenkitės nurodyti kuo daugiau informacijos (koks fotosesijos tipas domina, data ir pan.), tuomet galėsiu Jums pateikti išsamų atsakymą. Jeigu informacijos jokios nėra - taip ir galite parašyti “kol kas nieko nežinome”, aš padėsiu susidėlioti mintis : ) Į darbinius laiškus atsakau darbo dienomis. Į visus kitus, pvz. norit pasidalinti smagiu reels/tiktoku - nors ir vidury nakties : )',
   },
   {
     question:
@@ -105,7 +105,7 @@ export const DUK_INFO: DukInfo[] = [
       'Turiu tikrai solidų sąrašą pačių gražiausių lokacijų Jūsų idėjoms įgyvendinti, tačiau visada esu atvira naujoms idėjoms. Man labai patinka dar nematytos, įdomios vietos, ypatingai tos, kurios fotografuojamiems žmonėms kažką reiškia. Tikiu, kad tada fotosesijos nuotraukos būna dar ypatingesnės. Fotosesijų vietas visada derinu kartu su žmonėmis. Juk visi labai skirtingi, tad visuomet bandau išsiaiškinti, kokia aplinka artimiausia širdžiai būtent Jums.',
   },
   {
-    question: 'Koks jausmas turėti fotosesiją pas R Luz Photography?',
+    question: 'Koks jausmas turėti fotosesiją pas A Kind Of Magic Photography?',
     answer:
       'Man labai svarbus mano ir mano klientų tarpusavio ryšys jau nuo pirmų akimirkų. Noriu, kad mano žmonės jaustųsi jaukiai dar prieš man išsitraukiant fotoaparatą. Man patinka pakalbinti, susipažinti, kažką apie Jus sužinoti. Šalti ir lakoniški “kliento - paslaugos tiekėjo” santykiai man nėra artimi. Nejaukioje tyloje nebūsime, galiu tai pažadėti : ) Visi pradžioje jaučiasi kiek nepatogiai prieš fotoaparato objektyvą ir tai visiškai normalu! Todėl ir esu tam, kad galėčiau Jums padėti kuo greičiau apsiprasti, kad vėl jaustumėtės labiau savimi ir tada sukurtume daug nuostabių kadrų!',
   },
