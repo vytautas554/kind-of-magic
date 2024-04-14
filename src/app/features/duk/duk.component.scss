@@ -1,0 +1,19 @@
+.app-duk {
+  .p-accordion {
+    .p-accordion-content {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .p-accordion-header .p-accordion-header-link {
+      background-color: transparent !important;
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .custom-border {
+    border-top: 1px solid black !important;
+  }
+}
