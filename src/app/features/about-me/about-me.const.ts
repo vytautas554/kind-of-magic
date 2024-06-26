@@ -4,7 +4,7 @@ export const aboutMePath = 'apie-mane';
 
 export const AboutMeInfo: AboutMe[] = [
   {
-    imageSrc: '../../assets/img/test-images/ggg.578-Edit.jpg',
+    imageSrc: '../../assets/img/test-images/apie-mane-1.jpg',
     title: 'LABAS!\nMANO VARDAS ROMA',
     description:
       'Mano širdis priklauso veiksmui, gyvumui, tikrumui ir žinoma nuoširdumui nuotraukose. \n' +
@@ -25,7 +25,7 @@ export const AboutMeInfo: AboutMe[] = [
     slogan: `I don't want normal, I want magic! Rezonuoja? Susirašom!`,
   },
   {
-    imageSrc: '../../assets/img/test-images/ggg.578-Edit.jpg',
+    imageSrc: '../../assets/img/test-images/apie-mane-2.jpg',
     title: 'KELI ĮDOMŪS FAKTAI APIE MANE',
     description:
       '✦ Juokais galima sakyti, kad gimiau su fotoaparatu rankose. Tamsus kambariukas su raudona šviesele, ryškalai, juostelės - vaikystės aplinka. Ir štai aš šiandien čia, nuėjusi fotografo tėčio pėdomis. \n' +

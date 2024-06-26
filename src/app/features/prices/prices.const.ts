@@ -6,7 +6,7 @@ export const PLAN_INFO: PlanInfo[] = [
     serviceInfo: [
       {
         photographyValue: {
-          time: 'FOTOGRAFAVIMAS IKI 5 val.',
+          time: 'FOTOGRAFAVIMAS 5 val.',
           price: '750€',
         },
         includedServices: [
