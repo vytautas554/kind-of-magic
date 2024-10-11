@@ -65,29 +65,29 @@ export const PLAN_INFO: PlanInfo[] = [
         'Planuojate vestuves už Lietuvos ribų? Pasidalinkite savo planais ir gaukite ypatingą pasiūlymą. Jūsų šventė niekaip netils į klasikinius standartų rėmus? Papasakokite laiške apie savo unikalią viziją daugiau!',
     },
   },
-  {
-    header: 'FOTOSESIJA',
-    subHeader: 'KRIKŠTO',
-    serviceInfo: [
-      {
-        photographyValue: {
-          time: 'FOTOGRAFAVIMAS IKI 1 val.',
-          price: '150€',
-        },
-        includedServices: [
-          'Minimalus fotografavimo laikas 1 valanda.',
-          'Gražiausius kadrus atsirenkate patys iš paruoštos online galerijos.',
-          'Patarimai dėliojant kriškšto dienos planą.',
-          'Į kainą neįskaičiuotos kuro išlaidos ir įėjimai į muziejus, sodus ar kt. lankytinas vietas.',
-          'Fotografuojant Kauno mieste kuro mok. netaikomas.',
-        ],
-        extraServices: [
-          'Papildoma fotografavimo valanda 130€',
-          'Retušavimas iki 3 mėn.',
-        ],
-      },
-    ],
-  },
+  // {
+  //   header: 'FOTOSESIJA',
+  //   subHeader: 'KRIKŠTO',
+  //   serviceInfo: [
+  //     {
+  //       photographyValue: {
+  //         time: 'FOTOGRAFAVIMAS IKI 1 val.',
+  //         price: '150€',
+  //       },
+  //       includedServices: [
+  //         'Minimalus fotografavimo laikas 1 valanda.',
+  //         'Gražiausius kadrus atsirenkate patys iš paruoštos online galerijos.',
+  //         'Patarimai dėliojant kriškšto dienos planą.',
+  //         'Į kainą neįskaičiuotos kuro išlaidos ir įėjimai į muziejus, sodus ar kt. lankytinas vietas.',
+  //         'Fotografuojant Kauno mieste kuro mok. netaikomas.',
+  //       ],
+  //       extraServices: [
+  //         'Papildoma fotografavimo valanda 130€',
+  //         'Retušavimas iki 3 mėn.',
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     header: 'FOTOSESIJOS',
     subHeader: 'KITOS',
