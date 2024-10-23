@@ -24,7 +24,7 @@ export const PLAN_INFO: PlanInfo[] = [
       },
       {
         photographyValue: {
-          time: 'FOTOGRAFAVIMAS IKI 7 val.',
+          time: 'FOTOGRAFAVIMAS 7 val.',
           price: '1000€',
         },
         includedServices: [
@@ -42,7 +42,7 @@ export const PLAN_INFO: PlanInfo[] = [
       },
       {
         photographyValue: {
-          time: 'FOTOGRAFAVIMAS IKI 10 val.',
+          time: 'FOTOGRAFAVIMAS 10 val.',
           price: '1300€',
         },
         includedServices: [
@@ -71,7 +71,7 @@ export const PLAN_INFO: PlanInfo[] = [
   //   serviceInfo: [
   //     {
   //       photographyValue: {
-  //         time: 'FOTOGRAFAVIMAS IKI 1 val.',
+  //         time: 'FOTOGRAFAVIMAS 1 val.',
   //         price: '150€',
   //       },
   //       includedServices: [
@@ -94,18 +94,19 @@ export const PLAN_INFO: PlanInfo[] = [
     serviceInfo: [
       {
         photographyValue: {
-          time: 'FOTOGRAFAVIMAS IKI 1 val.',
+          time: 'FOTOGRAFAVIMAS 1 val.',
           price: '150€',
         },
         includedServices: [
           'Minimalus fotografavimo laikas 1 valanda.',
+          '30 redaguotų skaitmeninių nuotraukų.',
           'Gražiausius kadrus atsirenkate patys iš paruoštos online galerijos.',
           'Patarimai renkantis aprangą fotosesijai.',
           'Į kainą neįskaičiuotos kuro išlaidos ir įėjimai į muziejus, sodus ar kt. lankytinas vietas.',
           'Fotografuojant Kauno mieste kuro mok. netaikomas.',
         ],
         extraServices: [
-          'Papildoma fotografavimo valanda 130€',
+          'Papildoma fotografavimo valanda 140€',
           'Retušavimas iki 2 mėn.',
         ],
       },
