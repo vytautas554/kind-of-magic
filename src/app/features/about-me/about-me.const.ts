@@ -32,13 +32,13 @@ export const AboutMeInfo: AboutMe[] = [
       '\n' +
       '✦ Be galo myliu šilumą. Net ir šlapia nugara ir prilipusiais prie kaktos plaukais linksėsiu galva sakydama “man gera!” \n' +
       '\n' +
-      '✦ Mano svajonė turėti žadą atimančia gamta apsuptą alpakų, avių arba tiesiog visų įmanomų gyvūnų ūkį. Miesto centre. Su mcdonaldu už kampo, kad bet kuriuo dienos metu galėčiau gaut karštų bulvyčių. Sako svajot nedraudžiama 🙂\n' +
+      '✦ Mano svajonė turėti žadą atimančia gamta apsuptą alpakų, avių arba tiesiog visų įmanomų gyvūnų ūkį. Miesto centre. Su mcdonaldu už kampo, kad bet kuriuo dienos metu galėčiau gaut karštų bulvyčių.\n' +
       '\n' +
       '✦ Visada buvau humanitarė, ir nei lašelio tiksliukė. Iki dabar nesuvokiu, kaip atsidūriau tame matematikos konkurse “Kengūra”. Bet hey, bent nusipirkau pieštuką už 5 litus!\n' +
       '\n' +
       '✦ Kartą teko matyti kaip gimdo karvė. Sakė geriau nesiartint, nes vaizdas nebus gražus. Bet buvo gražu! \n' +
       '\n' +
-      '✦ Galutinai supratau, kad vis tik mėgstamiausias filmų žanras man yra dokumentika. O dar jeigu apie kokio nusikaltimo istoriją.. Mm.. 🙂 O “guilty pleasure” 90-00s banalios ir siaubingai lėkštos savaitgalinės romantinės komedijos.\n' +
+      '✦ Galutinai supratau, kad vis tik mėgstamiausias filmų žanras man yra dokumentika. O dar jeigu apie kokio nusikaltimo istoriją.. O “guilty pleasure” 90-00s banalios ir siaubingai lėkštos savaitgalinės romantinės komedijos.\n' +
       '\n' +
       '✦ Jeigu nebūčiau fotografė, ko gero šiuo metu dėčiau visas įmanomas pastangas, kad tapčiau pandų prižiūrėtoja/globėja/gelbėtoja. \n' +
       '\n' +
@@ -47,6 +47,6 @@ export const AboutMeInfo: AboutMe[] = [
       '✦ Rūgštūs (bet tikrai rūgštūs) guminukai taip pat yra vienas geriausių dalykų šioje žemėje.\n' +
       '\n' +
       '✦ Mano prieglaudinukas šuo yra neabejotinai vienas geriausių dalykų šioje žemėje.',
-    slogan: 'Kažkoks tekstas',
+    slogan: '',
   },
 ];

@@ -30,7 +30,7 @@ export const PLAN_INFO: PlanInfo[] = [
         includedServices: [
           'Fotografė + asistentas',
           'Nemažiau 280 redaguotų skaitmeninių nuotr.',
-          'Retušavimas iki 4 mėn.',
+          'Retušavimas iki 5 mėn.',
           'Pagalba dienos plano sudaryme nuo fotografavimo pradžios iki vakarinės dalies starto.',
           'Į kainą įskaičiuotos kuro išlaidos (neįskaičiuotas parkingas, keltai, įėjimai į sodus ar kt. lankyt. vietas)',
           'Data rezervuojama pasirašius sutartį ir sumokėjus 5-10% avansą.',
@@ -48,7 +48,7 @@ export const PLAN_INFO: PlanInfo[] = [
         includedServices: [
           'Fotografė + asistentas',
           'Nemažiau 400 redaguotų skaitmeninių nuotr.',
-          'Retušavimas iki 4 mėn.',
+          'Retušavimas iki 5 mėn.',
           'Pagalba dienos plano sudaryme nuo fotografavimo pradžios iki vakarinės dalies starto.',
           'Į kainą įskaičiuotos kuro išlaidos (neįskaičiuotas parkingas, keltai, įėjimai į sodus ar kt. lankyt. vietas)',
           'Data rezervuojama pasirašius sutartį ir sumokėjus 5-10% avansą.',
