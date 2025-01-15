@@ -32,7 +32,7 @@ export const AboutMeInfo: AboutMe[] = [
       '\n' +
       '✦ Be galo myliu šilumą. Net ir šlapia nugara ir prilipusiais prie kaktos plaukais linksėsiu galva sakydama “man gera!” \n' +
       '\n' +
-      '✦ Mano svajonė turėti žadą atimančia gamta apsuptą alpakų, avių arba tiesiog visų įmanomų gyvūnų ūkį. Miesto centre. Su mcdonaldu už kampo, kad bet kuriuo dienos metu galėčiau gaut karštų bulvyčių.\n' +
+      '✦ Mano svajonė turėti žadą atimančia gamta apsuptą alpakų, avių arba tiesiog visų įmanomų gyvūnų ūkį. Miesto centre. Su mcdonaldu už kampo, kad bet kuriuo dienos metu galėčiau gaut karštų bulvyčių!\n' +
       '\n' +
       '✦ Visada buvau humanitarė, ir nei lašelio tiksliukė. Iki dabar nesuvokiu, kaip atsidūriau tame matematikos konkurse “Kengūra”. Bet hey, bent nusipirkau pieštuką už 5 litus!\n' +
       '\n' +
