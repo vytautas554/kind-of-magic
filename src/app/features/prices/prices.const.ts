@@ -17,10 +17,7 @@ export const PLAN_INFO: PlanInfo[] = [
           'Į kainą įskaičiuotos kuro išlaidos (neįskaičiuotas parkingas, keltai, įėjimai į sodus ar kt. lankyt. vietas)',
           'Data rezervuojama pasirašius sutartį ir sumokėjus 5-10% avansą.',
         ],
-        extraServices: [
-          'Papildoma fotografavimo valanda 150€',
-          'Poros fotosesija (priešvestuvinė) -20€ nuolaida',
-        ],
+        extraServices: ['Papildoma fotografavimo valanda 150€'],
       },
       {
         photographyValue: {
@@ -35,10 +32,7 @@ export const PLAN_INFO: PlanInfo[] = [
           'Į kainą įskaičiuotos kuro išlaidos (neįskaičiuotas parkingas, keltai, įėjimai į sodus ar kt. lankyt. vietas)',
           'Data rezervuojama pasirašius sutartį ir sumokėjus 5-10% avansą.',
         ],
-        extraServices: [
-          'Papildoma fotografavimo valanda 100€',
-          'Poros fotosesija (priešvestuvinė) -30€ nuolaida',
-        ],
+        extraServices: ['Papildoma fotografavimo valanda 100€'],
       },
       {
         photographyValue: {
@@ -53,10 +47,7 @@ export const PLAN_INFO: PlanInfo[] = [
           'Į kainą įskaičiuotos kuro išlaidos (neįskaičiuotas parkingas, keltai, įėjimai į sodus ar kt. lankyt. vietas)',
           'Data rezervuojama pasirašius sutartį ir sumokėjus 5-10% avansą.',
         ],
-        extraServices: [
-          'Papildoma fotografavimo valanda 100€',
-          'Poros fotosesija (priešvestuvinė) -40€ nuolaida',
-        ],
+        extraServices: ['Papildoma fotografavimo valanda 100€'],
       },
     ],
     specialOffer: {
