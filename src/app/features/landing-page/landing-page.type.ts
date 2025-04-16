@@ -14,3 +14,8 @@ export interface CardSectionData {
   routePath: string;
   reviewPerson?: string;
 }
+
+export interface ImageData {
+  name: string;
+  url: string;
+}
