@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     provideAnimations(),
-    // provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    // provideStorage(() => getStorage())
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideStorage(() => getStorage()),
   ],
 };
