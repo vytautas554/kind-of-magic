@@ -1,0 +1,22 @@
+<div
+  class="flex justify-content-center pt-5"
+  [ngClass]="isScreenSizeMobile ? 'pt-8' : 'pt-1'"
+>
+  <div class="relative flex flex-column align-items-center w-11 sm:w-7 md:w-5">
+    <img
+      src="../../../assets/img/1/1.png"
+      alt="Title"
+      class="absolute top-0 left-0 w-full"
+      [ngClass]="isScreenSizeTabletOrMobile ? 'transform-35' : 'transform-50'"
+    />
+    <img src="../../../assets/img/1/2.jpg" alt="Main" class="mt-6 w-9" />
+    <img src="../../../assets/img/1/3.png" alt="Greetings" class="mt-5 w-6" />
+    <div
+      class="mt-4 text-center text-sm"
+      [ngClass]="isScreenSizeTabletOrMobile ? 'w-10' : 'w-7'"
+    >
+      Didžiausia aistra – fotografuoti džiaugsmą, šypsenas ir tikrą gyvenimą. Ai
+      ir dar bulvės! Man labai patinka bulvės!
+    </div>
+  </div>
+</div>
