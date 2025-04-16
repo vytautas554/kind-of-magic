@@ -3,4 +3,4 @@
   publish = "dist/kind-of-magic-fe/browser"
 
 [[plugins]]
-  package = "@netlify/plugin-angular"
+  package = "@netlify/angular-runtime"
