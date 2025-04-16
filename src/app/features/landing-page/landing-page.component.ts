@@ -8,7 +8,6 @@ import {
 import { CardSectionData, ImageData, ImageInfo } from './landing-page.type';
 import { CardSectionComponent } from './components/card-section/card-section.component';
 import { MainFooterComponent } from '../../components/main-footer/main-footer.component';
-import { FirebaseImagesService } from '../../services/firebase/firebase-images.service';
 import { AngularFireModule } from '@angular/fire/compat';
 import { ScreenSizeService } from '../../services/screen-size/screen-size.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
@@ -48,22 +47,22 @@ export class LandingPageComponent {
     this._screenSizeService.isScreenSizeTabletOrMobile$;
 
   constructor(
-    private readonly firebaseImagesService: FirebaseImagesService,
+    // private readonly firebaseImagesService: FirebaseImagesService,
     private readonly _screenSizeService: ScreenSizeService,
   ) {}
 
-  public async ngOnInit() {
-    // this.getFiles();
-  }
-
-  async getFiles() {
-    await this.firebaseImagesService.getLandingPageImages().then((images) => {
-      this.imageData = images;
-      console.log('urls', images);
-    });
-  }
-
-  getImageUrl(name: string): string | undefined {
-    return this.imageData?.find((img) => img.name === name)?.url;
-  }
+  // public async ngOnInit() {
+  //   // this.getFiles();
+  // }
+  //
+  // async getFiles() {
+  //   await this.firebaseImagesService.getLandingPageImages().then((images) => {
+  //     this.imageData = images;
+  //     console.log('urls', images);
+  //   });
+  // }
+  //
+  // getImageUrl(name: string): string | undefined {
+  //   return this.imageData?.find((img) => img.name === name)?.url;
+  // }
 }
