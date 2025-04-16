@@ -7,6 +7,7 @@ import { NavInfo } from './nav.type';
 import { MainLogoComponent } from '../main-logo/main-logo.component';
 import { MainIconsComponent } from '../main-icons/main-icons.component';
 import { Router } from '@angular/router';
+import { ScreenSizeService } from '../../services/screen-size/screen-size.service';
 
 @Component({
   selector: 'app-nav',
@@ -25,8 +26,12 @@ export class NavComponent {
   public sidebarVisible = false;
   public navInfoArray: NavInfo[] = NAV_INFO;
   public innerWidth: number;
+  readonly isScreenSizeMobile$ = this._screenSizeService.isScreenSizeMobile$;
 
-  constructor(private readonly router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private readonly _screenSizeService: ScreenSizeService,
+  ) {}
 
   @HostListener('window:resize', ['$event'])
   public onWindowResize(event: any): void {
