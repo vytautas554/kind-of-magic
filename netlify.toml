@@ -1,2 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist/kind-of-magic-fe/browser"
+
 [[plugins]]
-package = "@netlify/angular-runtime"
+  package = "@netlify/plugin-angular"
