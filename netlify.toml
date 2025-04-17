@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist/kind-of-magic-fe/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+  ssr = false
