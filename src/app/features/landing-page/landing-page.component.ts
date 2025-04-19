@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { ImageContainerComponent } from './components/image-container/image-container.component';
 import {
   AboutMeImgInfo,
@@ -15,15 +15,12 @@ import { MeFirstComponent } from './components/me-first/me-first.component';
 import { PhotoCollageComponent } from './components/photo-collage/photo-collage.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { SpinnerComponent } from '../../components/spinner/spinner.component';
-import { BehaviorSubject, Observable } from 'rxjs';
 import { FirebaseImagesService } from '../../services/firebase/firebase-images.service';
-import { VirtualScrollerModule } from 'primeng/virtualscroller';
-import { SkeletonModule } from 'primeng/skeleton';
-import { ScrollerModule } from 'primeng/scroller';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     ImageContainerComponent,
     CardSectionComponent,
