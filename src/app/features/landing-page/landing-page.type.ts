@@ -18,4 +18,5 @@ export interface CardSectionData {
 export interface ImageData {
   name: string;
   url: string;
+  loaded?: boolean;
 }

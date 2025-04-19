@@ -15,8 +15,11 @@ import { MeFirstComponent } from './components/me-first/me-first.component';
 import { PhotoCollageComponent } from './components/photo-collage/photo-collage.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { SpinnerComponent } from '../../components/spinner/spinner.component';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { FirebaseImagesService } from '../../services/firebase/firebase-images.service';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { SkeletonModule } from 'primeng/skeleton';
+import { ScrollerModule } from 'primeng/scroller';
 
 @Component({
   selector: 'app-landing-page',
@@ -40,7 +43,7 @@ export class LandingPageComponent {
   public headerImgInfo: ImageInfo = HeaderImgInfo;
   public aboutMeImgInfo: ImageInfo = AboutMeImgInfo;
   public cardSectionData: CardSectionData[] = CardSection;
-  public isLoading = signal(false);
+  public isLoading = true;
   public imageData: ImageData[];
 
   readonly isScreenSizeMobile$ = this._screenSizeService.isScreenSizeMobile$;
@@ -53,17 +56,18 @@ export class LandingPageComponent {
   ) {}
 
   public async ngOnInit() {
-    this.getFiles();
+    // this.getFiles();
   }
 
-  async getFiles() {
+  public async getFiles() {
     await this.firebaseImagesService.getLandingPageImages().then((images) => {
-      this.imageData = images;
-      console.log('urls', images);
+      this.imageData = images.map((img) => ({ ...img, loaded: false }));
     });
   }
 
-  getImageUrl(name: string): string | undefined {
+  public getImageUrl(name: string): string | undefined {
     return this.imageData?.find((img) => img.name === name)?.url;
   }
+
+  public onImageLoad(imageUrl: string) {}
 }
