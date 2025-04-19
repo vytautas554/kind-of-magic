@@ -1,11 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { ImageContainerComponent } from './components/image-container/image-container.component';
-import {
-  AboutMeImgInfo,
-  CardSection,
-  HeaderImgInfo,
-} from './landing-page.constants';
-import { CardSectionData, ImageData, ImageInfo } from './landing-page.type';
+import { ImageData } from './landing-page.type';
 import { CardSectionComponent } from './components/card-section/card-section.component';
 import { MainFooterComponent } from '../../components/main-footer/main-footer.component';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -37,10 +32,6 @@ import { FirebaseImagesService } from '../../services/firebase/firebase-images.s
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent {
-  public headerImgInfo: ImageInfo = HeaderImgInfo;
-  public aboutMeImgInfo: ImageInfo = AboutMeImgInfo;
-  public cardSectionData: CardSectionData[] = CardSection;
-  public isLoading = true;
   public imageData: ImageData[];
 
   readonly isScreenSizeMobile$ = this._screenSizeService.isScreenSizeMobile$;
@@ -57,9 +48,9 @@ export class LandingPageComponent {
   }
 
   public async getFiles() {
-    await this.firebaseImagesService.getLandingPageImages().then((images) => {
-      this.imageData = images.map((img) => ({ ...img, loaded: false }));
-    });
+    // await this.firebaseImagesService.getLandingPageImages().then((images) => {
+    //   this.imageData = images.map((img) => ({ ...img, loaded: false }));
+    // });
   }
 
   public getImageUrl(name: string): string | undefined {
