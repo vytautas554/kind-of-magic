@@ -4,7 +4,6 @@ import { LandingPageComponent } from './features/landing-page/landing-page.compo
 import { PricesComponent } from './features/prices/prices.component';
 import { PageUnderConstructionComponent } from './components/page-under-construction/page-under-construction.component';
 import { DukComponent } from './features/duk/duk.component';
-import { TestRouteComponent } from './features/landing-page/components/test-route/test-route.component';
 
 export const routes: Routes = [
   {
@@ -15,10 +14,6 @@ export const routes: Routes = [
   {
     path: 'pagrindinis',
     component: LandingPageComponent,
-  },
-  {
-    path: 'landing-page-test',
-    component: TestRouteComponent,
   },
   {
     path: 'apie-mane',

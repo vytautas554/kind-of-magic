@@ -16,6 +16,7 @@ import { PhotoCollageComponent } from './components/photo-collage/photo-collage.
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { SpinnerComponent } from '../../components/spinner/spinner.component';
 import { Observable } from 'rxjs';
+import { FirebaseImagesService } from '../../services/firebase/firebase-images.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -47,22 +48,22 @@ export class LandingPageComponent {
     this._screenSizeService.isScreenSizeTabletOrMobile$;
 
   constructor(
-    // private readonly firebaseImagesService: FirebaseImagesService,
+    private readonly firebaseImagesService: FirebaseImagesService,
     private readonly _screenSizeService: ScreenSizeService,
   ) {}
 
-  // public async ngOnInit() {
-  //   // this.getFiles();
-  // }
-  //
-  // async getFiles() {
-  //   await this.firebaseImagesService.getLandingPageImages().then((images) => {
-  //     this.imageData = images;
-  //     console.log('urls', images);
-  //   });
-  // }
-  //
-  // getImageUrl(name: string): string | undefined {
-  //   return this.imageData?.find((img) => img.name === name)?.url;
-  // }
+  public async ngOnInit() {
+    this.getFiles();
+  }
+
+  async getFiles() {
+    await this.firebaseImagesService.getLandingPageImages().then((images) => {
+      this.imageData = images;
+      console.log('urls', images);
+    });
+  }
+
+  getImageUrl(name: string): string | undefined {
+    return this.imageData?.find((img) => img.name === name)?.url;
+  }
 }
